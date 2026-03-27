@@ -1,8 +1,8 @@
 proc/updateworld()
 	if(autohost==0)
-		world.status={"<font color=[hostedcolor]>[worldstatus]<b>Version:</b> [gversion]]<br>RP Mode: <b>[rpmode]</b><br><b>Game Map:</b> [mapp]<BR><b>Game Mode:</b> [gamemode]<BR><b>Players:</b> [playersjoined]/[maxplayers]"}
+		world.status={"<font color=[hostedcolor]>[worldstatus]<b>Name:</b> Mii High<br>RP Mode: <b>[rpmode]</b><br><b>Game Map:</b> [mapp]<BR><b>Game Mode:</b> [gamemode]<BR><b>Players:</b> [playersjoined]/[maxplayers]"}
 	else
-		world.status={"<font color=[hostedcolor]>[worldstatus]<b>Version:</b> [gversion]]<br>RP Mode: <b>[rpmode]</b><br><b>Game Map:</b> [mapp]<BR><b>Auto Hosting:</b> Enabled<BR><b>Game Mode:</b> [gamemode]<BR><b>Players:</b> [playersjoined]/[maxplayers]"}
+		world.status={"<font color=[hostedcolor]>[worldstatus]<b>Name:</b> Mii High]<br>RP Mode: <b>[rpmode]</b><br><b>Game Map:</b> [mapp]<BR><b>Auto Hosting:</b> Enabled<BR><b>Game Mode:</b> [gamemode]<BR><b>Players:</b> [playersjoined]/[maxplayers]"}
 
 
 obj/var
