@@ -36,8 +36,3 @@ mob/verb/.Unlockedlist()
 	Unlock 8:[usr.unlock8]<BR>
 	<p></td></table></body></html>"}
 	usr << browse(writer,"window=sotcdb;can_close=1;size=200x250")
-proc/updateworld()
-	if(autohost==0)
-		world.status={"<font color=[hostedcolor]>[worldstatus]<b>Version:</b> [gversion]]<br>RP Mode: <b>[rpmode]</b><br><b>Game Map:</b> [mapp]<BR><b>Game Mode:</b> [gamemode]<BR><b>Players:</b> [playersjoined]/[maxplayers]"}
-	else
-		world.status={"<font color=[hostedcolor]>[worldstatus]<b>Version:</b> [gversion]]<br>RP Mode: <b>[rpmode]</b><br><b>Game Map:</b> [mapp]<BR><b>Auto Hosting:</b> Enabled<BR><b>Game Mode:</b> [gamemode]<BR><b>Players:</b> [playersjoined]/[maxplayers]"}
