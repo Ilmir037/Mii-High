@@ -1,3 +1,6 @@
+world
+    name = "Mii High: kto perforator?"
+
 // DM Environment file for Pyrce High.dme.
 // All manual changes should be made outside the BEGIN_ and END_ blocks.
 // New source code should be placed in .dm files: choose File/New --> Code File.
