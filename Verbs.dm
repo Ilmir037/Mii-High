@@ -969,9 +969,7 @@ mob/player
 				VampireBite(usr,src)
 		else if(usr.AoOni==1&&usr.equipname=="Fists")
 			if(src in oview(1))
-				range(8,usr) << "[fightfont][usr] bites and chews on the [src]!</b>"
-				usr.canattack=0
-				spawn(18)usr.canattack=1
+				ZombieAttack(usr,src)
 		else if(usr.nanaya==1&&usr.equipname=="Nanatsu-Yoru")
 			if(src in oview(1))
 				NanayaAttack(usr,src)

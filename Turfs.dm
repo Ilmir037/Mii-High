@@ -522,6 +522,7 @@ obj/Misc
 				set src in oview(1)
 				var/Y=CheckPlayer(usr)
 				if(Y==1)return
+				if(usr.AoOni==1)return
 				Move(usr,src)
 			Drop()
 				set src in usr
@@ -567,6 +568,7 @@ obj/Misc
 				set src in oview(1)
 				var/Y=CheckPlayer(usr)
 				if(Y==1)return
+				if(usr.AoOni==1)return
 				Move(usr,src)
 			Drop()
 				set src in usr
@@ -585,6 +587,7 @@ obj/Misc
 				set src in oview(1)
 				var/Y=CheckPlayer(usr)
 				if(Y==1)return
+				if(usr.AoOni==1)return
 				icon_state="tape inv"
 				Move(usr,src)
 			Drop()
@@ -643,6 +646,7 @@ obj/Misc
 				set src in oview(1)
 				var/Y=CheckPlayer(usr)
 				if(Y==1)return
+				if(usr.AoOni==1)return
 				Move(usr,src)
 			Drop()
 				set src in usr
@@ -670,6 +674,7 @@ obj/Misc
 				set src in oview(1)
 				var/Y=CheckPlayer(usr)
 				if(Y==1)return
+				if(usr.AoOni==1)return
 				if(hoardlimit=="On")
 					var/kits=0
 					for(var/obj/O in usr)
@@ -735,6 +740,7 @@ obj/Misc
 			Pick_Up()
 				set src in oview(1)
 				if(usr.playing==0||usr.shinigami==1)return
+				if(usr.AoOni==1)return
 				Move(usr,src)
 			Drop()
 				set src in usr
@@ -815,6 +821,7 @@ obj/Misc
 			Pick_Up()
 				set src in oview(1)
 				if(usr.playing==0)return
+				if(usr.AoOni==1)return
 				Move(usr,src)
 			Drop()
 				set src in usr
@@ -849,6 +856,7 @@ obj/Misc
 			Pick_Up()
 				set src in oview(1)
 				if(usr.playing==0)return
+				if(usr.AoOni==1)return
 				Move(usr,src)
 			Drop()
 				set src in usr
@@ -873,6 +881,7 @@ obj/Misc
 			Pick_Up()
 				set src in oview(1)
 				if(usr.playing==0)return
+				if(usr.AoOni==1)return
 				Move(usr,src)
 			Drop()
 				set src in usr
@@ -897,6 +906,7 @@ obj/Misc
 			Pick_Up()
 				set src in oview(1)
 				if(usr.playing==0)return
+				if(usr.AoOni==1)return
 				Move(usr,src)
 			Drop()
 				set src in usr
@@ -921,6 +931,7 @@ obj/Misc
 			Pick_Up()
 				set src in oview(1)
 				if(usr.playing==0)return
+				if(usr.AoOni==1)return
 				Move(usr,src)
 			Drop()
 				set src in usr
@@ -946,6 +957,7 @@ obj/Misc
 				set src in oview(1)
 				var/Y=CheckPlayer(usr)
 				if(Y==1)return
+				if(usr.AoOni==1)return
 				//Move(usr,src)
 				for(var/obj/O in usr)
 					if(O.type==/obj/Misc/Yen)
@@ -973,6 +985,7 @@ obj/Misc
 				set src in oview(1)
 				var/Y=CheckPlayer(usr)
 				if(Y==1)return
+				if(usr.AoOni==1)return
 				Move(usr,src)
 
 			Drop()
@@ -1008,6 +1021,7 @@ obj/Misc
 				set src in oview(1)
 				var/Y=CheckPlayer(usr)
 				if(Y==1)return
+				if(usr.AoOni==1)return
 				Move(usr,src)
 			Drop()
 				set src in usr
@@ -1500,6 +1514,7 @@ obj/Misc
 				set src in oview(1)
 				var/Y=CheckPlayer(usr)
 				if(Y==1)return
+				if(usr.AoOni==1)return
 				Move(usr,src)
 			Drop()
 				set src in usr
@@ -1520,6 +1535,7 @@ obj/Misc
 				set src in oview(1)
 				if(usr.playing==0)return
 				if(usr.shinigami==1)return
+				if(usr.AoOni==1)return
 				Move(usr,src)
 			Drop()
 				set src in usr
@@ -1576,6 +1592,7 @@ obj/Misc
 				set src in oview(1)
 				if(usr.playing==0)return
 				if(usr.shinigami==1)return
+				if(usr.AoOni==1)return
 				Move(usr,src)
 			Drop()
 				set src in usr
@@ -1598,6 +1615,7 @@ obj/Misc
 				set src in oview(1)
 				if(usr.playing==0)return
 				if(usr.shinigami==1)return
+				if(usr.AoOni==1)return
 				Move(usr,src)
 			Drop()
 				set src in usr
@@ -1617,6 +1635,7 @@ obj/Misc
 				set src in oview(1)
 				if(usr.shinigami==1)return
 				if(usr.playing==0)return
+				if(usr.AoOni==1)return
 				Move(usr,src)
 			Drop()
 				set src in usr
@@ -1638,6 +1657,7 @@ obj/Misc
 				set src in oview(1)
 				if(usr.playing==0)return
 				if(usr.shinigami==1)return
+				if(usr.AoOni==1)return
 				icon_state="keycard2"
 				Move(usr,src)
 			Drop()
@@ -1662,6 +1682,7 @@ obj/Misc
 				set src in oview(1)
 				if(usr.playing==0)return
 				if(usr.shinigami==1)return
+				if(usr.AoOni==1)return
 				Move(usr,src)
 			Drop()
 				set src in usr
@@ -1699,6 +1720,7 @@ obj/Misc
 				set src in oview(1)
 				if(usr.playing==0)return
 				if(usr.shinigami==1)return
+				if(usr.AoOni==1)return
 				icon_state="paper sheet inventory"
 				Move(usr,src)
 				if(airplane==1)
@@ -1786,6 +1808,7 @@ obj/Misc
 			Pick_Up()
 				set src in oview(1)
 				if(usr.playing==0)return
+				if(usr.AoOni==1)return
 				//if(usr.shinigami==1)return
 				icon_state="paper sheet inventory"
 				Move(usr,src)
@@ -1851,6 +1874,7 @@ obj/Misc
 				set src in oview(1)
 				if(usr.playing==0)return
 				if(usr.shinigami==1)return
+				if(usr.AoOni==1)return
 				icon_state="pda inventory"
 				Move(usr,src)
 			Drop()
@@ -2591,6 +2615,7 @@ obj
 					set src in oview(1)
 					if(usr.playing==0)return
 					if(usr.shinigami==1)return
+					if(usr.AoOni==1)return
 					Move(usr,src)
 				//	usr.overlays+='teddy overlay.dmi'
 				Drop()
@@ -3641,6 +3666,7 @@ obj/weapons
 				set src in oview(1)
 				if(usr.playing==0)return
 				if(usr.shinigami==1)return
+				if(usr.AoOni==1)return
 				Move(usr,src)
 			Drop()
 				set src in usr
@@ -3670,6 +3696,7 @@ obj/weapons
 				set src in oview(1)
 				if(usr.playing==0)return
 				if(usr.shinigami==1)return
+				if(usr.AoOni==1)return
 				Move(usr,src)
 			Drop()
 				set src in usr
@@ -3698,6 +3725,7 @@ obj/weapons
 				set src in oview(1)
 				if(usr.playing==0)return
 				if(usr.shinigami==1)return
+				if(usr.AoOni==1)return
 				Move(usr,src)
 			Drop()
 				set src in usr
@@ -3751,6 +3779,7 @@ obj/weapons
 				set src in oview(1)
 				if(usr.playing==0)return
 				if(usr.shinigami==1)return
+				if(usr.AoOni==1)return
 				Move(usr,src)
 			Drop()
 				set src in usr
@@ -3779,6 +3808,7 @@ obj/weapons
 				set src in oview(1)
 				if(usr.playing==0)return
 				if(usr.shinigami==1)return
+				if(usr.AoOni==1)return
 				Move(usr,src)
 			Drop()
 				set src in usr
@@ -3808,6 +3838,7 @@ obj/weapons
 				set src in oview(1)
 				if(usr.playing==0)return
 				if(usr.shinigami==1)return
+				if(usr.AoOni==1)return
 				Move(usr,src)
 			Drop()
 				set src in usr
@@ -3835,6 +3866,7 @@ obj/weapons
 				set src in oview(1)
 				if(usr.playing==0)return
 				if(usr.shinigami==1)return
+				if(usr.AoOni==1)return
 				Move(usr,src)
 			Drop()
 				set src in usr
@@ -3863,6 +3895,7 @@ obj/weapons
 				set src in oview(1)
 				if(usr.playing==0)return
 				if(usr.shinigami==1)return
+				if(usr.AoOni==1)return
 				Move(usr,src)
 			Drop()
 				set src in usr
@@ -3891,6 +3924,7 @@ obj/weapons
 				set src in oview(1)
 				if(usr.playing==0)return
 				if(usr.shinigami==1)return
+				if(usr.AoOni==1)return
 				Move(usr,src)
 			Drop()
 				set src in usr
@@ -3917,6 +3951,7 @@ obj/weapons
 				set src in oview(1)
 				if(usr.playing==0)return
 				if(usr.shinigami==1)return
+				if(usr.AoOni==1)return
 				Move(usr,src)
 			Drop()
 				set src in usr
@@ -3943,6 +3978,7 @@ obj/weapons
 				set src in oview(1)
 				if(usr.playing==0)return
 				if(usr.shinigami==1)return
+				if(usr.AoOni==1)return
 				Move(usr,src)
 			Drop()
 				set src in usr
@@ -3981,6 +4017,7 @@ obj/weapons
 				set src in oview(1)
 				if(usr.playing==0)return
 				if(usr.shinigami==1)return
+				if(usr.AoOni==1)return
 				Move(usr,src)
 			Drop()
 				set src in usr
@@ -4009,6 +4046,7 @@ obj/weapons
 				set src in oview(1)
 				if(usr.playing==0)return
 				if(usr.shinigami==1)return
+				if(usr.AoOni==1)return
 				Move(usr,src)
 			Drop()
 				set src in usr
@@ -4033,6 +4071,7 @@ obj/weapons
 				set src in oview(1)
 				if(usr.playing==0)return
 				if(usr.shinigami==1)return
+				if(usr.AoOni==1)return
 				Move(usr,src)
 			Drop()
 				set src in usr
@@ -4155,6 +4194,7 @@ obj/weapons
 				set src in oview(1)
 				if(usr.playing==0)return
 				if(usr.shinigami==1)return
+				if(usr.AoOni==1)return
 				Move(usr,src)
 			Drop()
 				set src in usr
@@ -4206,6 +4246,7 @@ obj/weapons
 				set src in oview(1)
 				if(usr.playing==0)return
 				if(usr.shinigami==1)return
+				if(usr.AoOni==1)return
 				Move(usr,src)
 			Drop()
 				set src in usr
@@ -4239,6 +4280,7 @@ obj/weapons
 				set src in oview(1)
 				if(usr.playing==0)return
 				if(usr.shinigami==1)return
+				if(usr.AoOni==1)return
 				Move(usr,src)
 			Drop()
 				set src in usr
