@@ -923,6 +923,56 @@ obj/Misc
 				if(usr.stamina>99)usr.stamina=100
 				usr.updatesp()
 				del src
+	Bun
+		icon='bun.dmi'
+		idesc="O-o-oh, this is delicious bun!"
+		iweight=1
+		verb
+			Pick_Up()
+				set src in oview(1)
+				if(usr.playing==0)return
+				if(usr.AoOni==1)return
+				Move(usr,src)
+			Drop()
+				set src in usr
+				set category = null
+				if(usr.playing==0)return
+				//if(src==usr.equipped)return
+				Move(usr.loc,src)
+			Eat()
+				set src in usr
+				set category = null
+				if(usr.playing==0)return
+				usr << "Delicious, alri-ight!"
+				usr.stamina+=rand(20,35)
+				if(usr.stamina>99)usr.stamina=100
+				usr.updatesp()
+				del src
+	Eclair
+		icon='eclair.dmi'
+		idesc="Hell, hell, hell! Delicious and sweet eclair!"
+		iweight=0.5
+		verb
+			Pick_Up()
+				set src in oview(1)
+				if(usr.playing==0)return
+				if(usr.AoOni==1)return
+				Move(usr,src)
+			Drop()
+				set src in usr
+				set category = null
+				if(usr.playing==0)return
+				//if(src==usr.equipped)return
+				Move(usr.loc,src)
+			Eat()
+				set src in usr
+				set category = null
+				if(usr.playing==0)return
+				usr << "Hell, fuck, hell! Amazing!"
+				usr.stamina+=rand(20,25)
+				if(usr.stamina>99)usr.stamina=100
+				usr.updatesp()
+				del src
 	Orange
 		icon='orange.dmi'
 		idesc="A delicious orange. It contains a lot of vitamin C!"
