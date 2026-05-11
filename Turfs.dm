@@ -923,6 +923,31 @@ obj/Misc
 				if(usr.stamina>99)usr.stamina=100
 				usr.updatesp()
 				del src
+	Orange
+		icon='orange.dmi'
+		idesc="A delicious orange. It contains a lot of vitamin C!"
+		iweight=1
+		verb
+			Pick_Up()
+				set src in oview(1)
+				if(usr.playing==0)return
+				if(usr.AoOni==1)return
+				Move(usr,src)
+			Drop()
+				set src in usr
+				set category = null
+				if(usr.playing==0)return
+				//if(src==usr.equipped)return
+				Move(usr.loc,src)
+			Eat()
+				set src in usr
+				set category = null
+				if(usr.playing==0)return
+				usr << "You eat an orange, feeling much more energized."
+				usr.stamina+=rand(10,30)
+				if(usr.stamina>99)usr.stamina=100
+				usr.updatesp()
+				del src
 	Bun
 		icon='bun.dmi'
 		idesc="O-o-oh, this is delicious bun!"
@@ -970,31 +995,6 @@ obj/Misc
 				if(usr.playing==0)return
 				usr << "Hell, fuck, hell! Amazing!"
 				usr.stamina+=rand(20,25)
-				if(usr.stamina>99)usr.stamina=100
-				usr.updatesp()
-				del src
-	Orange
-		icon='orange.dmi'
-		idesc="A delicious orange. It contains a lot of vitamin C!"
-		iweight=1
-		verb
-			Pick_Up()
-				set src in oview(1)
-				if(usr.playing==0)return
-				if(usr.AoOni==1)return
-				Move(usr,src)
-			Drop()
-				set src in usr
-				set category = null
-				if(usr.playing==0)return
-				//if(src==usr.equipped)return
-				Move(usr.loc,src)
-			Eat()
-				set src in usr
-				set category = null
-				if(usr.playing==0)return
-				usr << "You eat an orange, feeling much more energized."
-				usr.stamina+=rand(10,30)
 				if(usr.stamina>99)usr.stamina=100
 				usr.updatesp()
 				del src
