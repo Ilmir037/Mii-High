@@ -2399,6 +2399,12 @@ proc
 			if(rander3==4)
 				var/obj/Misc/Orange/I = new/obj/Misc/Orange
 				O.contents+=I
+			if(rander3==4)
+				var/obj/Misc/Bun/I = new/obj/Misc/Bun
+				O.contents+=I
+			if(rander3==4)
+				var/obj/Misc/Eclair/I = new/obj/Misc/Eclair
+				O.contents+=I
 
 		for(var/obj/Containers/School_Desk/O in world)
 			var/rander=rand(1,knifespawn)
@@ -2439,6 +2445,12 @@ proc
 				O.contents+=I
 			if(rander6==3)
 				var/obj/Misc/Orange/I = new/obj/Misc/Orange
+				O.contents+=I
+			if(rander6==3)
+				var/obj/Misc/Bun/I = new/obj/Misc/Bun
+				O.contents+=I
+			if(rander6==3)
+				var/obj/Misc/Eclair/I = new/obj/Misc/Eclair
 				O.contents+=I
 		var/obj/J=pick(Containers4storage)
 		var/obj/Misc/Door_Code/Kk = new/obj/Misc/Door_Code
